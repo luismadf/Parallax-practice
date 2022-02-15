@@ -6,68 +6,34 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background: #0a2a43;
-  min-height: 1500px;
-  scroll-behavior: smooth;
-}
-
-section {
+.parallax {
+  background-color: #fedcc8;
   position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-section::before {
-  content: "";
+.parallax img {
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
-  height: 100px;
-  background: linear-gradient(to top, #0a2a43, transparent);
-  z-index: 100;
-}
-
-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #0a2a43;
-  z-index: 100;
-  mix-blend-mode: color;
-}
-
-section img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  height: 70%;
   object-fit: cover;
-  pointer-events: none;
 }
 
-#text {
-  position: relative;
-  font-size: 6em;
-  color: white;
-  z-index: 1;
-}
-
-#road {
-  z-index: 2;
+.content {
+  background-color: #2d112b;
+  height: 100vh;
+  padding: 5em;
 }
 
 .first-p {
   display: block;
-  margin: 5em auto;
   width: 90%;
   color: white;
 }
